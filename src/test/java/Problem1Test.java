@@ -1,5 +1,5 @@
 // src/test/java/Problem1Test.java
-import org.junit.Test;
+import org.junit.*;
 import static org.junit.Assert.*;
 
 public class Problem1Test {
@@ -40,5 +40,8 @@ public class Problem1Test {
             head = head.next;
         }
         return sb.toString();
+    }
+    public static void main(String[] args) {
+        org.junit.runner.JUnitCore.main("Problem1Test");
     }
 }
