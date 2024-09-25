@@ -4,28 +4,29 @@ public class Problem2 {
         // TODO: Implement the insert method
         // This method should insert a new node with the given value at the specified position
         // If the position is out of bounds, insert the node at the end of the list
+       
         ListNode newNode = new ListNode(val);
-
-        if (position <= 1) {
+        
+        if (position == 0) {
             newNode.next = head;
-            return newNode; 
+            return newNode;
         }
 
         ListNode current = head;
-        int currentPosition = 1;
+        int currentIndex = 0;
 
-        while (current != null && currentPosition < position - 1) {
+        while (current != null && currentIndex < position - 1) {
             current = current.next;
-            currentPosition++;
+            currentIndex++;
         }
 
         if (current == null) {
-            return head; 
+            return head == null ? newNode : head;
         }
 
-        newNode.next = current.next; 
-        current.next = newNode; 
+        newNode.next = current.next;
+        current.next = newNode;
 
         return head;
-        }
+    }
 }
