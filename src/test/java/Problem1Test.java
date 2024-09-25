@@ -1,5 +1,5 @@
 // src/test/java/Problem1Test.java
-import org.junit.Test;
+import org.junit.*;
 import static org.junit.Assert.*;
 
 public class Problem1Test {
