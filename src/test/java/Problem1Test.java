@@ -41,7 +41,4 @@ public class Problem1Test {
         }
         return sb.toString();
     }
-    public static void main(String[] args) {
-        org.junit.runner.JUnitCore.main("Problem1Test");
-    }
 }

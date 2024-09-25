@@ -29,4 +29,17 @@ public class Problem2 {
 
         return head;
     }
+    public static void main(String [] args){
+        ListNode l1 = new ListNode(1);
+            l1.next = new ListNode(2);
+            l1.next.next = new ListNode(3);
+    
+          
+            // Inserts elements in a list at a particular position
+            ListNode insertedList = insert(l1, 4, 2);
+    
+            // Print the inserted list
+            Problem1.printList(insertedList);
+
+    }
 }
